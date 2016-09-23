@@ -20,11 +20,12 @@ public class View{
 		button.setText("Press me");
 		button.addActionListener(new ActionListener() {
         	public void actionPerformed(ActionEvent e) {
-        		updateView("Updated!");
+        		Model model = new Model();
+        		updateView(model.result.toString());
         	}
         });
-		updateView("This is a label!");
-		frame.setSize(300,300);
+		updateView("Press the button below to generate a random password!");
+		frame.setSize(500,100);
 		frame.setLocationRelativeTo(null);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.setVisible(true);

@@ -1,9 +1,8 @@
-
-public class Controller {
+public class Controller{
 	
 	public static void main(String[] args){
-		//View view = new View();
-		Model model = new Model();
+		View view = new View();
+		//Model model = new Model();
 	}
 
 }

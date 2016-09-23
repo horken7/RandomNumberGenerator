@@ -16,11 +16,11 @@ public class Model {
 		this.result = new StringBuilder();
 		this.length = 10; // could be variable
 
-		doSomething();
+		generatePassword();
 
 	}
 	
-    private void doSomething() {
+    private void generatePassword() {
 		int upper=0, lower=0, numbers=0, symbols=0;
 		int maxUpper=4, maxLower=4, maxNumbers=2, maxSymbols=2; // could be variable
 		while(result.length()<length){
@@ -47,7 +47,6 @@ public class Model {
 					result.append(allSymbols[first][second]);
 				}
 		}
-		System.out.println(result);
     }
 	
 	int newRandom(int max){
