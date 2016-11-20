@@ -21,6 +21,11 @@ public class Model {
 	}
 	
     private void generatePassword() {
+    	/**
+    	 * Fills the result String Builder with defined amount of
+    	 * upper/lowercase letters, numbers and symbols of
+    	 * random values in random order.  
+    	 */
 		int upper=0, lower=0, numbers=0, symbols=0;
 		int maxUpper=4, maxLower=4, maxNumbers=2, maxSymbols=2; // could be variable
 		while(result.length()<length){
